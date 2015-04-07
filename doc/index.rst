@@ -13,7 +13,7 @@ To contact administrators, use the `helpdesk`_
 .. toctree::
    :maxdepth: 2
 
-
+   oar
 
 Indices and tables
 ==================

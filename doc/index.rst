@@ -13,7 +13,8 @@ To contact administrators, use the `helpdesk`_
 .. toctree::
    :maxdepth: 2
 
-
+   presentation
+   module
 
 Indices and tables
 ==================

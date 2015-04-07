@@ -6,3 +6,5 @@ TODO
 `Interface web de supervision: OAR <http://rioc.inria.fr/monika>`_
 
 `Interface web de metrologie: OPSVIEW serviceMIRIAD (suivre l’onglet RIOC) <https://metro-roc.inria.fr/viewport/hpc>`_
+
+http://rioc.inria.fr/drawgantt 

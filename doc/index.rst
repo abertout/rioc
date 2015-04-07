@@ -15,6 +15,7 @@ To contact administrators, use the `helpdesk`_
 
    presentation
    module
+   oar
 
 Indices and tables
 ==================

@@ -8,6 +8,8 @@ Welcome to Inria Paris/Rocquencourt cluster user documentation's documentation!
 
 Contents:
 
+To contact administrators, use the `helpdesk`_
+
 .. toctree::
    :maxdepth: 2
 
@@ -20,3 +22,4 @@ Indices and tables
 * :ref:`modindex`
 * :ref:`search`
 
+.. _helpdesk: https://helpdesk.inria.fr/

@@ -1,8 +1,8 @@
-main: main.o compute_pi.o
+compute_pi: main.o compute_pi.o
 	mpicc -o $@ $^
 
 %.o: %.c
 	mpicc -c $<
 
 clean:
-	rm -f *.o main
+	rm -f *.o compute_pi

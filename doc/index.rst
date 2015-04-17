@@ -13,6 +13,7 @@ To contact administrators, use the `helpdesk`_
 .. toctree::
    :maxdepth: 2
 
+   getting_started
    presentation
    module
    oar

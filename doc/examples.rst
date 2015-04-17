@@ -4,5 +4,7 @@ Examples
 +---------------------------------+-----------------------------------------------------------------------------------------------------+
 | Description                     | File                                                                                                |
 +---------------------------------+-----------------------------------------------------------------------------------------------------+
-| Minimal C and MPI program       | :download:`cluster-pro-inria-example-c.tar.gz <_static/example/cluster-pro-inria-example-c.tar.gz>` |
+| Minimal C and MPI program       |  filepath                                                                                           |
 +---------------------------------+-----------------------------------------------------------------------------------------------------+
+
+.. :download:`cluster-pro-inria-example-c.tar.gz <_static/example/cluster-pro-inria-example-c.tar.gz>`

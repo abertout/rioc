@@ -1,6 +1,9 @@
 Getting started
 ===============
 
+The 5 minutes tutorial will show you how to execute your first parallel
+program on the ``rioc`` cluster.
+
 Using the `helpdesk`_, ask administrators for the creation of your account on
 the `rioc` cluster.
 
@@ -34,9 +37,10 @@ Build the code:
 
     make
 
-The ``compute_pi.sh`` script execute ``mpirun`` for ``OpenMPI`` ``OAR`` use:
+The ``compute_pi.sh`` script execute ``mpirun`` for ``OpenMPI`` and ``OAR`` use:
 
 .. literalinclude:: ../example/c/compute_pi.sh
+   :language: bash
 
 The script must be executable. (Which has already been done with `chmod +x
 compute_pi.sh`).

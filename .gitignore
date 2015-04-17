@@ -2,4 +2,5 @@
 *~
 .nfs*
 
-_build/
+doc/_build/
+doc/_static/example/*.tar.gz

@@ -49,9 +49,9 @@ help:
 
 clean:
 	rm -rf $(BUILDDIR)/*
-	rm -rf $(STATICDIR)/*.tar.gz
+	rm -rf $(STATICDIR)/example/*.tar.gz
 
-html: example-tarballs
+html:
 	$(SPHINXBUILD) -b html $(ALLSPHINXOPTS) $(BUILDDIR)/html
 	@echo
 	@echo "Build finished. The HTML pages are in $(BUILDDIR)/html."
@@ -177,6 +177,3 @@ pseudoxml:
 	$(SPHINXBUILD) -b pseudoxml $(ALLSPHINXOPTS) $(BUILDDIR)/pseudoxml
 	@echo
 	@echo "Build finished. The pseudo-XML files are in $(BUILDDIR)/pseudoxml."
-
-example-tarballs:
-	python ../script/write-example-tarballs.py

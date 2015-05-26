@@ -11,7 +11,7 @@ Install the package manager miniconda3, from:
 Create a conda environment, for example named 'cluster-pro-inria-doc',
 containing required packages:
 
-    conda create -n cluster-pro-inria-doc python=3 sphinx
+    conda create -n cluster-pro-inria-doc python=3 sphinx sphinx_rtd_theme
 
 Activate the conda environment:
 

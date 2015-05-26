@@ -1,8 +1,11 @@
 Getting started
 ===============
 
-The 5 minutes tutorial will show you how to execute your first parallel
+This 5 minutes tutorial will show you how to execute your first parallel
 program on the ``rioc`` cluster.
+
+Account creation and log in
+----------------------------
 
 Using the `helpdesk`_, ask administrators for the creation of your account on
 the `rioc` cluster.
@@ -14,6 +17,9 @@ Once your accout has been created, connect to `rioc` cluster using ssh:
     ssh <username>@rioc.inria.fr
 
 .. _helpdesk: https://helpdesk.inria.fr/categories/151/submit
+
+Build tutorial code
+----------------------------
 
 Download and extract :download:`cluster-pro-inria-example-c.tar.gz <_static/example/cluster-pro-inria-example-c.tar.gz>`:
 
@@ -36,6 +42,9 @@ Build the code:
 .. code-block:: bash
 
     make
+
+Execute tutorial code
+----------------------------
 
 The ``compute_pi.sh`` script execute ``mpirun`` for ``OpenMPI`` and ``OAR`` use:
 

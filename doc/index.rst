@@ -12,6 +12,7 @@ Inria Paris/Rocquencourt cluster documentation
    getting_started
    good_practices
    hardware
+   data
    module
    oar
    tools

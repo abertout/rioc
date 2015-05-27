@@ -50,17 +50,11 @@ A parallel file system ``FhGFS`` (2Gb/s) on ``InfiniBand`` (first 56 nodes) and
 ``Ethernet`` (last 38 nodes) can store 120To in ``/scratch`` (no backup) for
 HPC data.
 
-The 94 nodes also are interconnected on the `NAS storage server network
-<https://sic-roc.inria.fr/?page_id=1183>`_.
+User home directories are stored on ``rioc`` server and shared using ``NFS``
+on all nodes: ``/home/rioc/<user>``.  No backup is performed on by
+administrators on the home directories.
 
-`home dir` users are stored on `rioc` server which is shared using `NFS`
-  on all nodes: `/home/rioc/<user>`.
-
-Files in `/home/rioc/user` can be copied using `SSH` tools (for example: `scp`).
-
-No backup is performed on `/home/rioc/<user>` by administrators.
-
-`NAS` storage volumes `/projdata/team` are mounted by `NFS` on each node.
+``NAS`` storage volumes ``/projdata/team`` are mounted by ``NFS`` on each node.
 
 
 Hyperthreading

@@ -59,7 +59,7 @@ in your terminal.
 How can I specify how many nodes, processors and cores I want to reserve?
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
-this feature is available with the ``-l /nodes=<number of nodes>/cpu=<number of processors>/core=<number of cores>`` option of the ``oarsub`` command. For example, if you want to reserve 4 nodes, 2 processors and 8 cores, you have to type
+This feature is available with the ``-l /nodes=<number of nodes>/cpu=<number of processors>/core=<number of cores>`` option of the ``oarsub`` command. For example, if you want to reserve 4 nodes, 2 processors and 8 cores, you have to type
 
 .. code-block:: bash
 
@@ -67,6 +67,16 @@ this feature is available with the ``-l /nodes=<number of nodes>/cpu=<number of 
 
 in your terminal.
 
+How can I specify the duration of a reservation?
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+This feature is available with the ``-l walltime=<duration>`` option of the ``oarsub`` command. The duration format to pass to this option is ``HH:MM:SS``. Note that if you decide to specify the duration of your job, it must be done at the end of the ``-l`` option, separated by a comma. For example, if you want to reserve 4 nodes during 2 hours and 30 minutes, you have to type
+
+.. code-block:: bash
+
+   oarsub -l /nodes=4, walltime=02:30:00 ./myjob.sh
+
+in your terminal.
 
 
 

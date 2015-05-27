@@ -14,7 +14,7 @@ def setup_dirs():
     Directory hierarchy is as follow:
 
         cluster-pro-inria-roc/    <- root
-            doc/
+            doc/                  <- here (where this file is)
                 _static/
                     example/      <- static_dir
             example/              <- examples_root_dir
@@ -22,8 +22,7 @@ def setup_dirs():
                 freefem/          <- example_dir
                 octave/           <- example_dir
                 ...
-            script/               <- here (where this file is)
-                write-example-tarballs.py
+            write-example-tarballs.py
     """
     here = P.dirname(__file__)
     root = P.realpath( P.join(here, '..') )
@@ -56,7 +55,7 @@ def write_example_tarball(static_dir, example_dir):
     filename = prefix + '-' + example_name + '.tar.gz'
     filepath = P.join(static_dir, filename)
     with tarfile.open(filepath,'w:gz') as tar:
-        tar.add(example_dir, arcname=P.join(prefix,example_name))
+        tar.add(example_dir, arcname=P.join(example_name))
     return filepath
 
 def main():

@@ -16,20 +16,30 @@ How can I submit a job?
 
 The main command for submitting a job is called ``oarsub``.
 
-There exists two job submission modes: interactive and passive modes. 
+There exists two job submission modes: passive mode and interactive mode.
+Passive mode let you provide a script containing the commands you want to run on the cluster.
+You can submit a job in passive mode with the following commandi line:
+
+.. code-block:: bash
+
+   oarsub mycommands.sh
+
+where `mycommands.sh` is a bash script describing your job.
+Passive mode should be your preferred way of running parallel programs on the cluster, especially when the computational time of your application is high.
+A job submitted in passive mode cannot last more than 168 hours (7 days).
+
+However, it is not always easy to write a correct script `mycommands.sh` on the first attempt.
+Furthermore, even if your code runs on your machine, you may need to modify it to be able to run it on the cluster.
+Interactive has been designed to provide an ease of use in these cases.
+Indeed, interactive mode let you connect nodes and run commands in a terminal during a given period of time. 
 You can submit a job in interactive mode with the following command:
 
 .. code-block:: bash
 
    oarsub -I
 
-You can submit a job in interactive mode with the following command:
-
-.. code-block:: bash
-
-   oarsub script.sh
-
-Interactif mode is limited to 12 hours and 168 hours (7 days) in passif mode.
+This will let you test your application on small examples before running it on real-world problems.
+A job submitted in interactive mode cannot last more than 12 hours.
 
 How can I get my job identifier?
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~

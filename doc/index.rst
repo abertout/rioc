@@ -6,8 +6,6 @@
 Inria Paris/Rocquencourt cluster documentation's
 ===============================================================================
 
-To contact administrators, use the `helpdesk`_
-
 .. toctree::
    :maxdepth: 2
 
@@ -18,5 +16,11 @@ To contact administrators, use the `helpdesk`_
    oar
    tools
    examples
+
+Contact
+--------------------------
+
+If you have any questions, comments or suggestion please contact cluster
+administrators via the `helpdesk`_.
 
 .. _helpdesk: https://helpdesk.inria.fr/

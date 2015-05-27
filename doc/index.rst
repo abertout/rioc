@@ -19,11 +19,4 @@ To contact administrators, use the `helpdesk`_
    tools
    examples
 
-Indices and tables
-==================
-
-* :ref:`genindex`
-* :ref:`modindex`
-* :ref:`search`
-
 .. _helpdesk: https://helpdesk.inria.fr/

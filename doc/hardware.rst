@@ -1,8 +1,5 @@
-Presentation
+Hardware
 ===========================
-
-Some technical informations
----------------------------
 
 The cluster is made of 94 nodes, divided into 3 groups:
 
@@ -35,21 +32,5 @@ These 94 nodes also are interconnected on the `NAS storage server network <https
 
 For `pthread` users (shared memory), `hyperthreading` `BIOS` mode is activated on 4 nodes (37 to 40).
 
-Usage
----------------------------
-
 The cluster runs on `Scientific Linux 5.5` (`Kernel 2.6.18-274.18.1.el5 x86_64
 GNU/Linux`) and is administrated using `Bright Cluster` software.
-
-`GANGLIA <http://rioc.inria.fr/ganglia>`_ supervision web interface is used to visualize
-the cluster state.
-
-Each user must be registred to obtain `SSH` access to the server. `SSH` access
-is **restricted to Rocquencourt internal network**, see how to `access from
-outside <https://blog.inria.fr/sic-roc/?page_id=1938>`_ otherwise.
-
-It is hightly discouraged to execute processes from `/home/rioc` (especially to
-write), but rather use `/scratch` ou `/local` of each node. Indeed, writing on
-`/home/rioc` may overload the NFS serveur
-
-Interactif mode is limited to 12 hours and 168 hours (7 days) in passif mode.

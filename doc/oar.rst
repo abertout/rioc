@@ -29,6 +29,8 @@ You can submit a job in interactive mode with the following command:
 
    oarsub script.sh
 
+Interactif mode is limited to 12 hours and 168 hours (7 days) in passif mode.
+
 How can I get my job identifier?
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 

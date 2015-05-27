@@ -7,8 +7,14 @@ program on the ``rioc`` cluster.
 Account creation and log in
 ----------------------------
 
-Using the `helpdesk`_, ask administrators for the creation of your account on
-the `rioc` cluster.
+
+Each user must be registred to obtain `SSH` access to the server.  Using the
+`helpdesk`_, ask administrators for the creation of your account on the `rioc`
+cluster.
+
+`SSH` access is **restricted to Rocquencourt internal network**, see how to
+`access from outside <https://blog.inria.fr/sic-roc/?page_id=1938>`_
+otherwise.
 
 Once your accout has been created, connect to `rioc` cluster using ssh:
 

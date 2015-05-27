@@ -14,9 +14,11 @@ To contact administrators, use the `helpdesk`_
    :maxdepth: 2
 
    getting_started
-   presentation
+   good_practices
+   hardware
    module
    oar
+   tools
    examples
 
 Indices and tables

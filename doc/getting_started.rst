@@ -8,7 +8,7 @@ Account creation and log in
 ----------------------------
 
 
-Each user must be registred to obtain `SSH` access to the server.  Using the
+Each user must be registered to obtain `SSH` access to the server.  Using the
 `helpdesk`_, ask administrators for the creation of your account on the `rioc`
 cluster.
 
@@ -16,7 +16,7 @@ cluster.
 `access from outside <https://blog.inria.fr/sic-roc/?page_id=1938>`_
 otherwise.
 
-Once your accout has been created, connect to `rioc` cluster using ssh:
+Once your account has been created, connect to `rioc` cluster using ssh:
 
 .. code-block:: bash
 
@@ -33,7 +33,7 @@ Download and extract :download:`cluster-pro-inria-example-c.tar.gz <_static/exam
 
     wget http://cluster-pro-inria-doc.readthedocs.org/en/latest/_downloads/cluster-pro-inria-example-c.tar.gz
     tar xvzf cluster-pro-inria-example-c.tar.gz
-    cd cluster-pro-inria-example/c
+    cd c
 
 This archive contains a minimal ``C`` program using ``MPI``.
 

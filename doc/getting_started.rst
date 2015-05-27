@@ -32,7 +32,7 @@ Download and extract :download:`rioc-c.tar.gz <_static/example/rioc-c.tar.gz>`:
 .. code-block:: bash
 
     wget http://rioc.rtfd.org/en/master/_downloads/rioc-c.tar.gz
-    tar xvzf cluster-pro-inria-example-c.tar.gz
+    tar xvzf rioc-c.tar.gz
     cd c
 
 This archive contains a minimal ``C`` program using ``MPI``.

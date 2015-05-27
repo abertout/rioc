@@ -24,4 +24,4 @@ Contact
 If you have any questions, comments or suggestion please contact cluster
 administrators via the `helpdesk`_.
 
-.. _helpdesk: https://helpdesk.inria.fr/
+.. _helpdesk: https://helpdesk.inria.fr/categories/151/submit

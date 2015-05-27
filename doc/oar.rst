@@ -30,7 +30,7 @@ A job submitted in passive mode cannot last more than 168 hours (7 days).
 
 However, it is not always easy to write a correct script `mycommands.sh` on the first attempt.
 Furthermore, even if your code runs on your machine, you may need to modify it to be able to run it on the cluster.
-Interactive has been designed to provide an ease of use in these cases.
+Interactive mode has been designed to provide an ease of use in these cases.
 Indeed, interactive mode let you connect nodes and run commands in a terminal during a given period of time. 
 You can submit a job in interactive mode with the following command:
 
@@ -38,8 +38,7 @@ You can submit a job in interactive mode with the following command:
 
    oarsub -I
 
-This will let you test your application on small examples before running it on real-world problems.
-A job submitted in interactive mode cannot last more than 12 hours.
+This will let you run as many commands as you want during 12 consecutive hours at most.
 
 How can I get my job identifier?
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~

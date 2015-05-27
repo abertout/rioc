@@ -2,5 +2,7 @@
 *~
 .nfs*
 
+__pycache__
+
 doc/_build/
 doc/_static/example/*.tar.gz

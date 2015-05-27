@@ -27,11 +27,11 @@ Once your account has been created, connect to `rioc` cluster using ssh:
 Build tutorial code
 ----------------------------
 
-Download and extract :download:`cluster-pro-inria-example-c.tar.gz <_static/example/cluster-pro-inria-example-c.tar.gz>`:
+Download and extract :download:`rioc-c.tar.gz <_static/example/rioc-c.tar.gz>`:
 
 .. code-block:: bash
 
-    wget http://cluster-pro-inria-doc.readthedocs.org/en/latest/_downloads/cluster-pro-inria-example-c.tar.gz
+    wget http://rioc.rtfd.org/en/master/_downloads/rioc-c.tar.gz
     tar xvzf cluster-pro-inria-example-c.tar.gz
     cd c
 

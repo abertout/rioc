@@ -13,7 +13,7 @@ def setup_dirs():
 
     Directory hierarchy is as follow:
 
-        cluster-pro-inria-roc/    <- root
+        rioc/                     <- root
             doc/                  <- here (where this file is)
                 _static/
                     example/      <- static_dir
@@ -51,7 +51,7 @@ def write_example_tarball(static_dir, example_dir):
     :type static_dir: string
     """
     example_name = P.basename(example_dir)
-    prefix = 'cluster-pro-inria-example'
+    prefix = 'rioc'
     filename = prefix + '-' + example_name + '.tar.gz'
     filepath = P.join(static_dir, filename)
     with tarfile.open(filepath,'w:gz') as tar:

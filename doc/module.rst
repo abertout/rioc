@@ -1,35 +1,44 @@
 Module
 ===========================
 
-Use thee `module` commands to update your environment for the different tools 
-you use (`GCC`, `MPI`, `BLAS`, `LAPACK`, ...).
+Use the ``module`` commands to update your environment for the different tools 
+you use (``GCC``, ``MPI``, ``BLAS``, ``LAPACK``, ...).
+
+commands
+---------------------------
+
+More usefull ``module`` commands are:
 
 +------------------------+-------------------------------------+
+| command                | description                         |
++========================+=====================================+
 | module avail           | list available modules              |
 +------------------------+-------------------------------------+
-| module add             | add a module to your environment    |
+| module load <name>     | load a module in your environment   |
++------------------------+-------------------------------------+
+| module unload <name>   | unload a module of your environment |
++------------------------+-------------------------------------+
+| module list            | list activated modules              |
++------------------------+-------------------------------------+
+| module help <name>     | list activated modules              |
 +------------------------+-------------------------------------+
 
-For example, in your `.bashrc`, in order to use `parallels` commands (`pexec`,
-`pcopy`, `pkilluser`):
+For example:
 
 .. code-block:: bash
 
-    module add cluster-tools
+    module load openmpi
 
-When leaving your session, do not forget to use the `pkilluser` command
-(destructs all your process open on all nodes).
+Add this line in your ``~/.bashrc`` if you want it to be executed every time
+you log on ``rioc``.
 
-Notes:
+environment
+---------------------------
 
-    - `home dir` users are stored on `rioc` server which is shared using `NFS`
-      on all nodes: `/home/rioc/<user>`.
+``module`` only modify environement variables.
 
-    - No backup is performed on `/home/rioc/<user>` by administrators.
+Use the ``env`` command to see all the defined environment variables:
 
-    - `NAS` storage volumes `/projdata/team` are mounted by `NFS` on each node.
+.. code-block:: bash
 
-    - Files in `/home/rioc/user` can be copied using `SSH` tools (for example: `scp`).
-
-    - To speed up computation, do no overload the server, and remember local
-      disk `/local` of each node can be use.
+    env

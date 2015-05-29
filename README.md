@@ -8,14 +8,14 @@ Install the package manager miniconda3, from:
 
     http://conda.pydata.org/miniconda.html
 
-Create a conda environment, for example named 'cluster-pro-inria-doc',
+Create a conda environment, for example named 'rioc',
 containing required packages:
 
-    conda create -n cluster-pro-inria-doc python=3 sphinx sphinx_rtd_theme
+    conda create -n rioc python=3 sphinx sphinx_rtd_theme
 
 Activate the conda environment:
 
-    source activate cluster-pro-inria-doc 
+    source activate rioc
 
 Build documentation
 -------------------

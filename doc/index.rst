@@ -21,7 +21,8 @@ Inria Paris/Rocquencourt cluster documentation
 Contact
 --------------------------
 
-If you have any questions, comments or suggestion please contact cluster
-administrators via the `helpdesk`_.
+If you have any questions, comments or suggestions please contact cluster
+administrators via the `helpdesk`_ or on the ``clusters-roc@inria.fr`` mailing
+list.
 
 .. _helpdesk: https://helpdesk.inria.fr/categories/151/submit

@@ -209,7 +209,7 @@ latex_elements = {
 # (source start file, target name, title,
 #  author, documentclass [howto, manual, or own class]).
 latex_documents = [
-  ('index', 'InriaParisRocquencourtclusteruserdocumentation.tex', u'Inria Paris/Rocquencourt cluster user documentation Documentation',
+  ('index', 'InriaParisRocquencourtclusteruserdocumentation.tex', u'Inria Paris/Rocquencourt cluster user documentation',
    u'Cedric Doucet, David Froger', 'manual'),
 ]
 
@@ -239,7 +239,7 @@ latex_documents = [
 # One entry per manual page. List of tuples
 # (source start file, name, description, authors, manual section).
 man_pages = [
-    ('index', 'inriaparisrocquencourtclusteruserdocumentation', u'Inria Paris/Rocquencourt cluster user documentation Documentation',
+    ('index', 'inriaparisrocquencourtclusteruserdocumentation', u'Inria Paris/Rocquencourt cluster user documentation',
      [u'Cedric Doucet, David Froger'], 1)
 ]
 
@@ -253,7 +253,7 @@ man_pages = [
 # (source start file, target name, title, author,
 #  dir menu entry, description, category)
 texinfo_documents = [
-  ('index', 'InriaParisRocquencourtclusteruserdocumentation', u'Inria Paris/Rocquencourt cluster user documentation Documentation',
+  ('index', 'InriaParisRocquencourtclusteruserdocumentation', u'Inria Paris/Rocquencourt cluster user documentation',
    u'Cedric Doucet, David Froger', 'InriaParisRocquencourtclusteruserdocumentation', 'One line description of project.',
    'Miscellaneous'),
 ]

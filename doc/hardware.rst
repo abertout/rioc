@@ -51,8 +51,7 @@ A parallel file system ``FhGFS`` (2Gb/s) on ``InfiniBand`` (first 56 nodes) and
 HPC data.
 
 User home directories are stored on ``rioc`` server and shared using ``NFS``
-on all nodes: ``/home/rioc/<user>``.  No backup is performed on by
-administrators on the home directories.
+on all nodes: ``/home/rioc/<user>``. 
 
 ``NAS`` storage volumes ``/projdata/team`` are mounted by ``NFS`` on each node.
 

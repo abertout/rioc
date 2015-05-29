@@ -7,7 +7,7 @@ you use (``GCC``, ``MPI``, ``BLAS``, ``LAPACK``, ...).
 commands
 ---------------------------
 
-More usefull ``module`` commands are:
+Most usefull ``module`` commands are:
 
 +------------------------+-------------------------------------+
 | command                | description                         |
@@ -35,7 +35,7 @@ you log on ``rioc``.
 environment
 ---------------------------
 
-``module`` only modify environement variables.
+``module`` only modify environment variables.
 
 Use the ``env`` command to see all the defined environment variables:
 

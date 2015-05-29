@@ -22,7 +22,6 @@ Contact
 --------------------------
 
 If you have any questions, comments or suggestions please contact cluster
-administrators via the `helpdesk`_ or on the ``clusters-roc@inria.fr`` mailing
-list.
+administrators via the `helpdesk`_.
 
 .. _helpdesk: https://helpdesk.inria.fr/categories/151/submit

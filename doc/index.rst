@@ -14,8 +14,9 @@ Inria Paris/Rocquencourt cluster documentation
    good_practices
    hardware
    data
-   module
    oar
+   conda
+   module
    tools
    examples
 

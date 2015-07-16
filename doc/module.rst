@@ -1,5 +1,12 @@
-Module
+.. _module:
+   
+module
 ===========================
+
+.. note::
+
+    :ref:`module` and :ref:`conda` achieve the same goal of providing libraries
+    and softwares. We recommand using :ref:`conda`.
 
 Use the ``module`` commands to update your environment for the different tools 
 you use (``GCC``, ``MPI``, ``BLAS``, ``LAPACK``, ...).

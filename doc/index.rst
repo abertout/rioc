@@ -8,6 +8,7 @@ Inria Paris/Rocquencourt cluster documentation
 
 .. toctree::
    :maxdepth: 2
+   :numbered:
 
    getting_started
    good_practices

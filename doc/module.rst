@@ -7,7 +7,7 @@ you use (``GCC``, ``MPI``, ``BLAS``, ``LAPACK``, ...).
 commands
 ---------------------------
 
-Most usefull ``module`` commands are:
+Most useful ``module`` commands are:
 
 +------------------------+-------------------------------------+
 | command                | description                         |
@@ -20,7 +20,7 @@ Most usefull ``module`` commands are:
 +------------------------+-------------------------------------+
 | module list            | list activated modules              |
 +------------------------+-------------------------------------+
-| module help <name>     | list activated modules              |
+| module help <name>     | show the help message for a module  |
 +------------------------+-------------------------------------+
 
 For example:

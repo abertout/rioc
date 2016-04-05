@@ -32,7 +32,7 @@ sheet`_.
 How can I activate conda?
 ----------------------------------------------
 
-``conda`` must be in you ``PATH`` to be used:
+``conda`` must be in your ``PATH`` to be used:
 
 .. code-block:: bash
 
@@ -46,14 +46,14 @@ activated with:
 
     $ source activate rioc
 
-This modify your PATH to point to activated environment:
+This modify your ``PATH`` to point to activated environment:
 
 .. code-block:: bash
 
    $ echo $PATH
    /cm/shared/miniconda3/envs/rioc/bin:<... the rest of your PATH... >
 
-The also set the ``$CONDA_ENV_PATH`` environment variable:
+This also set the ``$CONDA_ENV_PATH`` environment variable:
 
 .. code-block:: bash
 

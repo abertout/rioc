@@ -17,6 +17,7 @@ Inria Paris/Rocquencourt cluster documentation
    module
    oar
    tools
+   distributed
    examples
 
 Contact

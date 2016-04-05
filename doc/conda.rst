@@ -15,6 +15,12 @@ provided with ``Conda``, as well as advanced usage of ``Conda``.
     Windows, and was created for Python programs but can package and distribute any
     software. (`conda documentation`_).
 
+.. note::
+
+    :ref:`module` and :ref:`conda` achieve the same goal of providing
+    libraries and softwares. As Conda support is experimental on `rioc`, we
+    recommand using :ref:`module` for now.
+
 Where can I find documentation about Conda?
 ----------------------------------------------
 

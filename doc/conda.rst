@@ -199,20 +199,28 @@ How can I run my application with OAR?
 --------------------------------------
 
 When submitting a script with :ref:`OAR <OAR>`, remember to :ref:`activate
-<activate_env>` the conda environment is the script.
+<activate_env>` the conda environment in the script.
 
-The script ``run.sh`` of the previous example contains for example:
+The script ``run.sh`` of the previous example contains the commands to execute 
+our program on the parallel acrhitecture:
 
 .. literalinclude:: ../example/cxx-mpi-hdf5/run.sh
    :language: bash
 
-After creating input data for the program:
+But before its execution, we need to create input data for the program:
 
 .. code-block:: bash
 
     ./create_inputs.sh
    
-it can be submitted using ``OAR``:
+To submit our script to the cluster, we can use ``OAR``. But before that, let's
+desactivate the current environment:
+
+.. code-block:: bash
+   
+   source deactivate
+
+then,
 
 .. code-block:: bash
 

@@ -48,7 +48,7 @@ master_doc = 'index'
 
 # General information about the project.
 project = u'Inria Paris/Rocquencourt cluster user documentation'
-copyright = u'2015, Cedric Doucet, David Froger'
+copyright = u'2015, Cedric Doucet, David Froger, Mauricio Diaz'
 
 # The version info for the project you're documenting, acts as replacement for
 # |version| and |release|, also used in various other places throughout the
@@ -210,7 +210,7 @@ latex_elements = {
 #  author, documentclass [howto, manual, or own class]).
 latex_documents = [
   ('index', 'InriaParisRocquencourtclusteruserdocumentation.tex', u'Inria Paris/Rocquencourt cluster user documentation',
-   u'Cedric Doucet, David Froger', 'manual'),
+   u'Cedric Doucet, David Froger, Mauricio Diaz', 'manual'),
 ]
 
 # The name of an image file (relative to this directory) to place at the top of
@@ -240,7 +240,7 @@ latex_documents = [
 # (source start file, name, description, authors, manual section).
 man_pages = [
     ('index', 'inriaparisrocquencourtclusteruserdocumentation', u'Inria Paris/Rocquencourt cluster user documentation',
-     [u'Cedric Doucet, David Froger'], 1)
+     [u'Cedric Doucet, David Froger, Mauricio Diaz'], 1)
 ]
 
 # If true, show URL addresses after external links.
@@ -254,7 +254,7 @@ man_pages = [
 #  dir menu entry, description, category)
 texinfo_documents = [
   ('index', 'InriaParisRocquencourtclusteruserdocumentation', u'Inria Paris/Rocquencourt cluster user documentation',
-   u'Cedric Doucet, David Froger', 'InriaParisRocquencourtclusteruserdocumentation', 'One line description of project.',
+   u'Cedric Doucet, David Froger, Mauricio Diaz', 'InriaParisRocquencourtclusteruserdocumentation', 'One line description of project.',
    'Miscellaneous'),
 ]
 
@@ -275,9 +275,9 @@ texinfo_documents = [
 
 # Bibliographic Dublin Core info.
 epub_title = u'Inria Paris/Rocquencourt cluster user documentation'
-epub_author = u'Cedric Doucet, David Froger'
-epub_publisher = u'Cedric Doucet, David Froger'
-epub_copyright = u'2015, Cedric Doucet, David Froger'
+epub_author = u'Cedric Doucet, David Froger, Mauricio Diaz'
+epub_publisher = u'Cedric Doucet, David Froger, Mauricio Diaz'
+epub_copyright = u'2015, Cedric Doucet, David Froger, Mauricio Diaz'
 
 # The basename for the epub file. It defaults to the project name.
 #epub_basename = u'Inria Paris/Rocquencourt cluster user documentation'

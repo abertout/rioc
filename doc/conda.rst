@@ -247,7 +247,7 @@ Can I use conda packages outside of the cluster?
 Yes, conda can be installed on every desktop or laptop, without root
 privileges, on `GNU/Linux`, `OSX` or `Windows`.
 
-How To I set up my own environment with selected packages?
+How do I set up my own environment with selected packages?
 ----------------------------------------------------------
 
 Suppose you want the ``2.7`` version of ``Python``, instead of the

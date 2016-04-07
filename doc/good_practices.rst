@@ -8,7 +8,9 @@ write), but rather use ``/scratch`` or ``/local`` of each node. Indeed, writing 
 The command ``oarstat`` provides you information about the usage of the cluster.
 If necessary, you can use ``oardel`` to destruct the processes open in several
 nodes. 
+
 For example,
+
 .. code-block:: bash
 
     oardel 41417

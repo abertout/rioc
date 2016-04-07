@@ -18,8 +18,10 @@ provided with ``Conda``, as well as advanced usage of ``Conda``.
 .. note::
 
     :ref:`module` and :ref:`conda` achieve the same goal of providing
-    libraries and softwares. As Conda support is experimental on `rioc`, we
-    recommand using :ref:`module` for now.
+    libraries and softwares. :ref:`module` is the solution traditionally used
+    on clusters, :ref:`conda` is more recent, and provide among others very
+    up-to-date Python scientific packages. Use whatever tool is more suitable
+    for you.
 
 Where can I find documentation about Conda?
 ----------------------------------------------

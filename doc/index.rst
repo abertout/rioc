@@ -16,6 +16,7 @@ Inria Paris/Rocquencourt cluster documentation
    data
    module
    oar
+   conda
    tools
    distributed
    examples

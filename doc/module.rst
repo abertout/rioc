@@ -1,4 +1,6 @@
-Module
+.. _module:
+   
+module
 ===========================
 
 Use the ``module`` commands to update your environment for the different tools 

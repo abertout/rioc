@@ -2,6 +2,13 @@
 *~
 .nfs*
 
+*.o
+main
+
+build/
+
+*.h5
+
 __pycache__
 
 doc/_build/

@@ -41,7 +41,7 @@ Activate the ``openmpi`` rioc module:
 
 .. code-block:: bash
 
-    module load openmpi/gcc/64/1.6.5
+    module load openmpi
 
 Build the code:
 

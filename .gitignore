@@ -13,3 +13,4 @@ __pycache__
 
 doc/_build/
 doc/_static/example/*.tar.gz
+doc/*.pyc

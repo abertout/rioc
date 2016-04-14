@@ -19,6 +19,7 @@ Inria Paris/Rocquencourt cluster documentation
    conda
    tools
    distributed
+   gpu
    examples
 
 Contact

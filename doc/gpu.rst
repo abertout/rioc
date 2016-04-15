@@ -20,9 +20,41 @@ using the `CUDA toolkit`_ in the computing cluster.
 Where can I find documentation about GPU Toolkit?
 --------------------------------------------------
 Nvidia webpage host the `CUDA documentation`_. It's important to note that the
-`CUDA toolkit`_ version currently available in ``rioc`` is 6.5.
+`CUDA toolkit`_ version currently available in ``rioc`` is ``6.5``.
+
+How can I compile my code using CUDA?
+----------------------------------------------
+
+`CUDA toolkit`_ version ``6.5`` in installed in the cluster ``rioc``. This 
+version is only compatible with ``gcc`` compilers >= ``4.4``. Then, we need to
+select the right compiler's version in order to avoid error. 
+For that reason, the module ``gcc 4.9.2`` activated by default during the set
+uo of the starting environment at ``rioc`` must be unloaded:
+
+.. code-block:: bash
+
+    $ module unload gcc
+    $ gcc --version
+    gcc (GCC) 4.4.7 20120313 (Red Hat 4.4.7-16)
+    Copyright (C) 2010 Free Software Foundation, Inc.
+    This is free software; see the source for copying conditions.  There is NO
+    warranty; not even for MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.
 
 
+Next, to use the `CUDA toolkit`_ , it must be activated with:
+
+.. code-block:: bash
+
+    $ module load cuda65/toolkit/6.5.14
+
+Compile and link my code with CUDA Libraries using Makefile
+------------------------------------------------------------
+
+We use this example extracted from the cuda samples folder to show...
+
+
+Compile and link my code with CUDA Libraries using CMake
+---------------------------------------------------------
 
 
 .. _CUDA toolkit: https://developer.nvidia.com/cuda-toolkit-65 

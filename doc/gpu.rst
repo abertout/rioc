@@ -19,17 +19,21 @@ using the `CUDA toolkit`_ in the computing cluster.
 
 Where can I find documentation about GPU Toolkit?
 --------------------------------------------------
+
 Nvidia webpage host the `CUDA documentation`_. It's important to note that the
 `CUDA toolkit`_ version currently available in ``rioc`` is ``6.5``.
 
-How can I compile my code using CUDA?
-----------------------------------------------
 
+A basic example of using Cuda toolkit and C language on the cluster
+---------------------------------------------------------------------
+
+Build the example code
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 `CUDA toolkit`_ version ``6.5`` in installed in the cluster ``rioc``. This 
 version is only compatible with ``gcc`` compilers >= ``4.4``. Then, we need to
-select the right compiler's version in order to avoid error. 
-For that reason, the module ``gcc 4.9.2`` activated by default during the set
-uo of the starting environment at ``rioc`` must be unloaded:
+select the right compiler's version in order to avoid errors. 
+For that reason, the module ``gcc 4.9.2`` activated by default during set-up
+of the default environment is unloaded:
 
 .. code-block:: bash
 
@@ -47,14 +51,69 @@ Next, to use the `CUDA toolkit`_ , it must be activated with:
 
     $ module load cuda65/toolkit/6.5.14
 
-Compile and link my code with CUDA Libraries using Makefile
-------------------------------------------------------------
+Download and extract :download:`rioc-c-cuda.tar.gz <_static/example/rioc-c-cuda.tar.gz>`:
 
-We use this example extracted from the cuda samples folder to show...
+.. code-block:: bash
+
+    wget http://rioc.rtfd.org/en/master/_downloads/rioc-c-cuda.tar.gz
+    tar xvzf rioc-c-cuda.tar.gz
+    cd c-cuda
+
+This archive contains a minimal ``C`` program using `CUDA toolkit`_.
+
+Build the code:
+
+.. code-block:: bash
+
+    make
+
+Execute the example code
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+The ``launch_matrixVector.sh`` script executes the program compiled by ``nvcc``
+(Nvidia's C compilator). I consists of a very simple script calling the 
+executable:
+
+.. literalinclude:: ../example/c-cuda/launch_matrixVector.sh
+   :language: bash
+
+To submit the code, use the ``oarsub`` command specifying the use of a gpu node:
+
+.. code-block:: bash
+
+    oarsub -q gpu -l /nodes=2 ./launch_matrixVector.sh
+
+The script must be executable. If it's not the case use  
+``chmod +x launch_matrixVector.sh``.
+
+Results of the process can be consulted in the files ``OAR*.std*``
 
 
-Compile and link my code with CUDA Libraries using CMake
----------------------------------------------------------
+Code explanation
+^^^^^^^^^^^^^^^^^
+
+Let's start by explaining the code. The main functionality consists in calculate
+the multiplication of a matrix :math:`\textbf{A}` and a vector 
+:math:`\textbf{b}` :
+
+.. math::
+
+   \textbf{c}_{[N \times 1]} = \textbf{A}_{[N \times M]} \times \textbf{b}_{[M \times 1]}
+
+which result is stored into the vector  :math:`\textbf{c}`.
+
+
+
+
+
+
+.. How can I compile my code using CUDA?
+.. ---------------------------------------
+
+
+.. Compile and link my code with CUDA Libraries using Makefile
+.. ------------------------------------------------------------
+
 
 
 .. _CUDA toolkit: https://developer.nvidia.com/cuda-toolkit-65 

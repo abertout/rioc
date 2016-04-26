@@ -1,7 +1,6 @@
 #include <stdio.h>
 // CUDA runtime
 #include <cuda_runtime.h>
-#include <time.h>
 
 // Helper functions and utilities to work with CUDA
 #include <helper_functions.h>
@@ -56,9 +55,13 @@ int main (int argc, char **argv) {
     }
 
 
+
+  int numDev = 0;   
   int devID = 0;
   cudaError_t error;
   cudaDeviceProp deviceProp;
+  
+  cudaGetDeviceCount(&numDev);
 
   // Get CUDA device access from device id
   error = cudaGetDevice(&devID);
@@ -76,8 +79,18 @@ int main (int argc, char **argv) {
     else
     {
         // Print information about the graphic card (gpu) used to run this example
-        printf("GPU Device %d: \"%s\" with compute capability %d.%d\n\n", devID,
+        printf("GPU Devices installed on the cluster: %d \n", numDev);
+
+        printf("GPU Device %d: \"%s\" with compute capability %d.%d\n", devID,
             deviceProp.name, deviceProp.major, deviceProp.minor);
+        printf("GPU Device num of multiprocessors:  %d \n", deviceProp.multiProcessorCount);
+        printf("GPU Device num of thread per block: %d \n", 
+            deviceProp.maxThreadsPerBlock);
+        printf("GPU Device num of thread per multiprocessor: %d \n", 
+            deviceProp.maxThreadsPerMultiProcessor);
+
+
+
     }
 
 
@@ -91,6 +104,11 @@ int main (int argc, char **argv) {
   A=(float*)malloc(sizeof(float)*N*M);
   b=(float*)malloc(sizeof(float)*M);
   c=(float*)malloc(sizeof(float)*N);
+
+  // Memory allocation in the device (gpu)
+  cudaMalloc((void**)&dev_A, sizeof(float)*N*M);
+  cudaMalloc((void**)&dev_b, sizeof(float)*M);
+  cudaMalloc((void**)&dev_c, sizeof(float)*N);
   
   
   // Functions to initialize with some values matrix A, vector b and vector c
@@ -105,10 +123,6 @@ int main (int argc, char **argv) {
   print_array(b, M, "in-vector (b) [Mx1]");
   print_array(c, N, "out-vector (c) [Nx1]");
 
-  // Memory allocation in the device (gpu)
-  cudaMalloc((void**)&dev_A, sizeof(float)*N*M);
-  cudaMalloc((void**)&dev_b, sizeof(float)*M);
-  cudaMalloc((void**)&dev_c, sizeof(float)*N);
 
 
   // Transfering memory from the cpu (host) to the gpu (device)
@@ -118,7 +132,7 @@ int main (int argc, char **argv) {
 
   // Kernel code. This portion of code is executed directly in the device (gpu)
   printf("\n\nRunning Kernel...\n\n");
-  kernel<<<(N+255)/256, 256>>>(dev_A, dev_b, dev_c, N, M);
+  kernel<<<(N+1023)/1024, 1024>>>(dev_A, dev_b, dev_c, N, M);
 
   
   // Transfer the result from device memory to cpu memory

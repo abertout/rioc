@@ -226,7 +226,12 @@ The expression:
     int tid=threadIdx.x+blockIdx.x*blockDim.x;
 
 calculates an index to access rows from matrix A (and also to store results of 
-vector c). Then a sum of all the element across the row is evaluated (for loop). 
+vector c). Then, a sum of all the element across the row is evaluated (for loop).
+
+Another easy introduction to CUDA C and C++ is presented in the `following link 
+<https://devblogs.nvidia.com/parallelforall/easy-introduction-cuda-c-and-c/>`_.
+It shows the same concepts here discussed applied to a different example.
+
 
 
 

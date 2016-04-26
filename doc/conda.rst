@@ -235,10 +235,21 @@ What softwares/libraries are available?
 ----------------------------------------
 
 Packages of the official `anaconda distribution
-<http://docs.continuum.io/anaconda/pkg-docs>`_ are available.  Additional
-packages are available on the `SED Conda channel
-<http://ipscc.readthedocs.org/en/latest/package-listing.html>`_, and new
-packages may be added on `demand
+<http://docs.continuum.io/anaconda/pkg-docs>`_ are available. 
+
+Additional packages of the `SED Conda channel
+<http://ipscc.readthedocs.org/en/latest/package-listing.html>`_ are
+available if channel is added in ``~/.condarc``:
+
+.. code-block:: yaml
+
+    channels:
+        - file:///cm/shared/conda-channels/inria-pro-sed
+        - defaults
+
+
+
+New packages may be added on `demand
 <https://helpdesk.inria.fr/categories/151/submit>`_.
 
 Can I use conda packages outside of the cluster?
@@ -260,6 +271,8 @@ environments must be created in ``/scratch``:
 
     envs_dirs:
       - /scratch/<you username>/miniconda3
+
+    allow_softlinks: False
 
 You can now create a new environment named ``py27`` like this:
 

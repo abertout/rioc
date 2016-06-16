@@ -106,6 +106,14 @@ size :math:`[N \times 1]`.
 .. literalinclude:: ../example/c-cuda/matrix_vector.cu
    :language: c
 
+It's important to notice that the result of this operation will be stored in
+cpu's memory (device) but the calculation it's going to be done by the gpu 
+(the device). In fact, the host and the device handle different memories which
+are completely unrelated. Cuda's language assure the communication between these
+two memory blocks and the programmer is responsible for the allocation of memory 
+either by calling the the classical function  ``malloc`` or the Cuda's 
+function ``cudaMalloc`` (we'll see this later).
+
 In the headers section, the file ``cuda_runtime.h`` is included in order to use
 the available functions from the library `CUDA toolkit`_. Also, 
 ``helper_functions.h`` contains some functions as ``checkCmdLineFlag`` used at

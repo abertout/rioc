@@ -29,11 +29,11 @@ A basic example of using Cuda toolkit and C language on the cluster
 
 Build the example code
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-`CUDA toolkit`_ version ``6.5`` in installed in the cluster ``rioc``. This 
+`CUDA toolkit`_ version ``6.5`` is installed in the cluster ``rioc``. This 
 version is only compatible with ``gcc`` compilers >= ``4.4``. Then, we need to
-select the right compiler's version in order to avoid errors. 
-For that reason, the module ``gcc 4.9.2`` activated by default during set-up
-of the default environment is unloaded:
+select the right compiler's version in order to avoid compilation errors. 
+For that reason, the module ``gcc 4.9.2``, activated by default during user's 
+login, must be unloaded:
 
 .. code-block:: bash
 
@@ -45,7 +45,7 @@ of the default environment is unloaded:
     warranty; not even for MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.
 
 
-Next, to use the `CUDA toolkit`_ , it must be activated with:
+Next, to use the `CUDA toolkit`_ , it could be activated using the following command:
 
 .. code-block:: bash
 
@@ -109,9 +109,9 @@ size :math:`[N \times 1]`.
 It's important to notice that the result of this operation will be stored in
 cpu's memory (device) but the calculation it's going to be done by the gpu 
 (the device). In fact, the host and the device handle different memories which
-are completely unrelated. Cuda's language assure the communication between these
+are completely unrelated. Cuda's language assures the communication between these
 two memory blocks and the programmer is responsible for the allocation of memory 
-either by calling the the classical function  ``malloc`` or the Cuda's 
+either by calling the the classical C function  ``malloc`` or the Cuda's 
 function ``cudaMalloc`` (we'll see this later).
 
 In the headers section, the file ``cuda_runtime.h`` is included in order to use
@@ -122,11 +122,11 @@ using the command line.
 
 Following with the main function, there are two type of objects that save
 information about the device's current state: ``cudaError_t`` and 
-``cudaDeviceProp``. The latter, in particular, allow us to knowd about the 
+``cudaDeviceProp``. The latter, in particular, allow us to know about the 
 physical properties of the devices installed on the cluster (model, version, 
 etc.).
 
-Once this "reading arguments" stage is completed, there is a typical sequence 
+Once the parsing arguments stage is completed, there is a typical sequence 
 of operations that are performed in a Cuda C program:
 
 * Declare and allocate memory (on the host and the device (graphic card)).

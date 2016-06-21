@@ -4,7 +4,7 @@ GPU Usage
 ===============================
 
 
-``rioc`` cluster counts with two computing nodes specialized in gpu processing.
+``rioc`` cluster counts with two computing nodes specialized in GPU processing.
 Each of these nodes is equipped with two graphics processing unities (GPU). The 
 GPU model available for both nodes is the Nvidia Tesla K20X GPU.
 
@@ -12,8 +12,10 @@ GPU usage can be achieved by using different frameworks and/or platforms: two
 common methods include the OpenCL framework or the CUDA application programming 
 interface (API). 
 
-To begin, tutorial to start writing your own code using the `CUDA toolkit`_ is 
-proposed. This document explains also how to compile, link and execute programs 
+To start using GPU capabilities in the ``rioc`` cluster, we propose a short tutorial. 
+It's a starting point that will provide you some basic tools to start writting 
+your own code using the `CUDA toolkit`_. 
+This document also explains how to compile, link and execute programs 
 using the `CUDA toolkit`_ in the computing cluster.
 
 
@@ -77,7 +79,7 @@ executable:
 .. literalinclude:: ../example/c-cuda/launch_matrixVector.sh
    :language: bash
 
-To submit the code, use the ``oarsub`` command specifying the use of a gpu node:
+To submit the code, use the ``oarsub`` command specifying the use of a GPU node:
 
 .. code-block:: bash
 
@@ -107,7 +109,7 @@ size :math:`[N \times 1]`.
    :language: c
 
 It's important to notice that the result of this operation will be stored in
-cpu's memory (device) but the calculation it's going to be done by the gpu 
+cpu's memory (device) but the calculation it's going to be done by the GPU 
 (the device). In fact, the host and the device handle different memories which
 are completely unrelated. Cuda's language assures the communication between these
 two memory blocks and the programmer is responsible for the allocation of memory 
@@ -190,8 +192,8 @@ Information between the triple chevrons is called the *execution configuration*.
 It allows to establish how many device threads execute the kernel code in 
 parallel. In CUDA programming, threads are organized in blocks. A block is 
 executed by a multiprocessing unit. Each block can process an X quantity of 
-threads and a particular model of gpu is described by Y multiprocessing units. 
-Then, the maximum number of threads to be executed in this gpu is X x Y.
+threads and a particular model of GPU is described by Y multiprocessing units. 
+Then, the maximum number of threads to be executed in this GPU is X x Y.
 In this kind of architecture, we speak of launching a kernel with a *grid of 
 thread blocks*. The first argument, in our example (``(N+1023)/1024``)
 specifies the number of thread block in the grid, and the second argument 

@@ -22,8 +22,9 @@ using the `CUDA toolkit`_ in the computing cluster.
 Where can I find documentation about GPU Toolkit?
 --------------------------------------------------
 
-Nvidia webpage host the `CUDA documentation`_. It's important to note that the
-`CUDA toolkit`_ version currently available in ``rioc`` is ``6.5``.
+Nvidia webpage host the `CUDA documentation`_. The
+`CUDA toolkit`_ version currently available in ``rioc`` is ``6.5``. (This version
+might be updated by the time).
 
 
 A basic example of using Cuda toolkit and C language on the cluster

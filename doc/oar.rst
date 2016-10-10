@@ -76,7 +76,7 @@ This feature is available with the ``-l walltime=<duration>`` option of the ``oa
 
 .. code-block:: bash
 
-   oarsub -l /nodes=4, walltime=02:30:00 ./myjob.sh
+   oarsub -l /nodes=4,walltime=02:30:00 ./myjob.sh
 
 in your terminal.
 
